@@ -152,7 +152,7 @@ void _comfork(addres_t *addres)
 		{
 			addres->sta = WEXITSTATUS(addres->sta);
 			if (addres->sta == 126)
-				err_msg(addres, "You Have no permmission\n");
+				err_msg(addres, "Permission denied\n");
 		}
 	}
 }
