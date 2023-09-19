@@ -114,7 +114,7 @@ void com_path(addres_t *addres)
 		else if (*(addres->arg) != '\n')
 		{
 			addres->sta = 127;
-			err_msg(addres, "Not available\n");
+			err_msg(addres, "not found\n");
 		}
 	}
 }
