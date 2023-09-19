@@ -36,6 +36,6 @@ int main(int ac, char **av)
 	}
 	_env_list(addres);
 	_histR(addres);
-	hsh(addres, av);
+	shmain(addres, av);
 	return (EXIT_SUCCESS);
 }

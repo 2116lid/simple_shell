@@ -7,7 +7,7 @@
  *
  * Return: 0 on success, 1 on failure.
  */
-int hsh(addres_t *addres, char **av)
+int shmain(addres_t *addres, char **av)
 {
 	ssize_t m = 0;
 	int cobui_in = 0;

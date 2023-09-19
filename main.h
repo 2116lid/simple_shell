@@ -105,7 +105,7 @@ void cust_puts(char *);
 int cust_putchar(char);
 int wr_ch(char c, int fd);
 int in_str(char *str, int fd);
-int hsh(addres_t *, char **);
+int shmain(addres_t *, char **);
 int built_search(addres_t *);
 void com_path(addres_t *);
 void _comfork(addres_t *);
