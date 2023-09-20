@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * interact - returns true if shell is in interactive mode.
+ * interact - a function that checks if shell is interactive or not.
  * @addres: address for struct.
  *
  * Return: True if interact mode, False on failure.
@@ -33,18 +33,4 @@ int _delimeter(char e, char *deli)
 		}
 	}
 	return (0);
-}
-
-/**
- * alpha - checks for alphabetes.
- * @c: The character to input.
- * Return: 1 on sucssess, 0 on failure.
- */
-
-int alpha(int c)
-{
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	else
-		return (0);
 }
