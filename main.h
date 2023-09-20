@@ -30,16 +30,16 @@
 extern char **environ;
 
 /**
- * struct listsig - a struct for single linked list.
+ * struct liststr - a struct for single linked list.
  * @num: the number field.
  * @str: a string.
  * @next: points to the next node.
  */
 typedef struct liststr
 {
-        int num;
-        char *str;
-        struct liststr *next;
+	int num;
+	char *str;
+	struct liststr *next;
 } list_t;
 
 /**
