@@ -48,38 +48,3 @@ int alpha(int c)
 	else
 		return (0);
 }
-
-/**
- * _atoi - converts a string to integer.
- * @str: a string that we try to convert.
- * Return: 0 if no numbers, converted number if any.
- */
-
-int _atoi(char *str)
-{
-	int i = 0, sign = 1, flag = 0, result;
-	unsigned int res = 0;
-
-	while (str[i] != '\0' && flag != 2)
-	{
-		if (str[i] == '-')
-			sign *= -1;
-
-		if (str[i] >= '0' && str[i] <= '9')
-		{
-			flag = 1;
-			res *= 10;
-			res += (str[i] - '0');
-		}
-		else if (flag == 1)
-			flag = 2;
-	       	i++;
-	}
-
-	if (sign == -1)
-		result = -res;
-	else
-		result = res;
-
-	return (result);
-}

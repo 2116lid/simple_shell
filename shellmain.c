@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * hsh - the shell's main part
+ * shmain - a function which is the shell's main part.
  * @addres: the return addres struct.
  * @av: argv.
  *
